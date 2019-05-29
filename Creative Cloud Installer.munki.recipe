@@ -21,7 +21,7 @@
 				<string>testing</string>
 			</array>
 			<key>description</key>
-			<string>Creative Cloud Desktop give you your favorite Adobe creative tools, always up to date. </string>
+			<string>Creative Cloud Desktop provides your favorite Adobe creative tools, always up to date. </string>
 			<key>developer</key>
 			<string>Adobe Systems, Inc.</string>
 			<key>display_name</key>
@@ -45,6 +45,29 @@
 				<string>%pathname%</string>
 				<key>repo_subdirectory</key>
 				<string>%MUNKI_REPO_SUBDIR%</string>
+				<key>items_to_copy</key>
+					<array>
+						<dict>
+							<key>destination_path</key>
+							<string>/tmp</string>
+							<key>source_item</key>
+							<string>Creative Cloud Installer.app</string>
+						</dict>
+					</array>
+					<key>name</key>
+					<string>%NAME%</string>
+					<key>postinstall_script</key>
+					<string>#!/bin/sh
+					/tmp/Creative\ Cloud\ Installer.app/Contents/MacOS/Install --mode=silent
+					exit $?
+					</string>
+					<key>uninstall_method</key>
+					<string>uninstall_script</string>
+					<key>uninstall_script</key>
+					<string>#!/bin/sh
+					rm -rf /Applications/Utilities/Adobe\ Creative\ Cloud
+					exit $?
+					</string>
 			</dict>
 			<key>Processor</key>
 			<string>MunkiImporter</string>
