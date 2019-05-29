@@ -20,8 +20,14 @@
 			<array>
 				<string>testing</string>
 			</array>
+			<key>category</key>
+			<string>Internet</string>
 			<key>description</key>
-			<string> </string>
+			<string>Break free from the browser!
+
+Flotato turns itself into any app, just by giving it a new name. It's like phone web apps for desktops; compact, light-weight, unbelievably fast.
+
+https://flotato.com</string>
 			<key>developer</key>
 			<string>Morten Petersen</string>
 			<key>display_name</key>
