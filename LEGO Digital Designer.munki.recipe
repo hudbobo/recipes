@@ -24,10 +24,12 @@
 			<array>
 				<string>testing</string>
 			</array>
+			<key>category</key>
+			<string>Development</string>
 			<key>description</key>
 			<string>Build virtual Lego structures.</string>
 			<key>developer</key>
-			<string></string>
+			<string>LEGO</string>
 			<key>display_name</key>
 			<string>LEGO Digital Designer</string>
 			<key>name</key>
